@@ -1,0 +1,19 @@
+创建工程
+scrapy startproject quotetutorial
+
+创建spider
+cd quotetutorial
+scrapy genspider quotes.toscrapy.com
+
+运行spider
+在Terminal中 scrapy crawl quotes 运行spider
+
+快速调试模式
+scrapy shell quotes.toscrape.com   进入调试模式
+
+保存数据
+scrapy crawl quotes -o quotes.json   保存  jl  csv xml  等
+
+items.py  定义数据结构
+pipelines.py     保存数据过滤
+response.urljoin(next)  # 提取完整url
