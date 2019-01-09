@@ -56,10 +56,10 @@ ROBOTSTXT_OBEY = False
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 
 
-DOWNLOADER_MIDDLEWARES = {
-   'quototutorial.middlewares.ProxyMiddleware': 543,  # 使用代理
-   'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,  # 关闭
-}
+# DOWNLOADER_MIDDLEWARES = {
+#    # 'quototutorial.middlewares.ProxyMiddleware': 543,  # 使用代理
+#    # 'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,  # 关闭
+# }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -69,10 +69,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'quototutorial.pipelines.MongoPipeline': 400,
-   'quototutorial.pipelines.TextPipeline': 300,
-}
+# ITEM_PIPELINES = {
+#    # 'quototutorial.pipelines.MongoPipeline': 400,
+#    # 'quototutorial.pipelines.TextPipeline': 300,
+# }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
